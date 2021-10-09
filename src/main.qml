@@ -23,7 +23,31 @@ ApplicationWindow {
 
             Button {
                 id: button
-                text: qsTr("Click Button")
+                text: qsTr("Button")
+            }
+
+            CheckBox {
+                text: qsTr("CheckBox")
+            }
+
+            DelayButton {
+                text: qsTr("DelayButton")
+            }
+
+            RadioButton {
+                text: qsTr("RadioButton")
+            }
+
+            RoundButton {
+                text: qsTr("RoundButton")
+            }
+
+            Switch {
+                text: qsTr("Switch")
+            }
+
+            ToolButton {
+                text: qsTr("ToolButton")
             }
         }
 
@@ -32,21 +56,6 @@ ApplicationWindow {
 
             ComboBox {
                 model: ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth", "Ninth", "Tenth"]
-            }
-        }
-
-        Card {
-            title: qsTr("CheckBox")
-            CheckBox {
-                text: qsTr("E-mail")
-            }
-
-            CheckBox {
-                text: qsTr("Calendar")
-            }
-
-            CheckBox {
-                text: qsTr("Contacts")
             }
         }
     }

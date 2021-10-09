@@ -9,11 +9,23 @@ Pane {
     antialiasing: true
     contentItem: ColumnLayout {
         anchors.centerIn: parent
-        Text {
-            id: _title
+
+        RowLayout {
             Layout.alignment: Qt.AlignHCenter
-            font.pixelSize: 16
-            text: qsTr("Card")
+            Layout.fillWidth: true
+            Text {
+                id: _title
+                Layout.alignment: Qt.AlignHCenter
+                Layout.fillWidth: true
+                font.pixelSize: 16
+                text: qsTr("Card")
+                horizontalAlignment: Text.AlignHCenter
+            }
+
+            // Image {
+            //     Layout.alignment: Qt.AlignVCenter | Qt.AlignRight
+            //     source: "qrc:/qt-project.org/imports/QtQuick/Controls.2/images/double-arrow.png"
+            // }
         }
 
         Rectangle {
