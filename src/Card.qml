@@ -39,8 +39,9 @@ Pane {
 
     background: Rectangle {
         anchors.fill: parent
-        color: "#8E8E93"
+        color: "#f6f6f6"
         radius: 10
+    }
 
         layer.enabled: true
         layer.effect: DropShadow {
@@ -51,5 +52,4 @@ Pane {
             radius: 12
             color: "#aa000000"
         }
-    }
 }
