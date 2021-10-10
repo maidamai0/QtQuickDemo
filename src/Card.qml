@@ -43,13 +43,13 @@ Pane {
         radius: 10
     }
 
-        layer.enabled: true
-        layer.effect: DropShadow {
-            transparentBorder: true
-            horizontalOffset: 3
-            verticalOffset: 3
-            samples: 25
-            radius: 12
-            color: "#aa000000"
-        }
+    layer.enabled: true
+    layer.effect: DropShadow {
+        transparentBorder: true
+        horizontalOffset: 3
+        verticalOffset: 3
+        samples: 25
+        radius: 12
+        color: "#aa000000"
+    }
 }
