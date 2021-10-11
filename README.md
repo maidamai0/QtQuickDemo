@@ -21,3 +21,9 @@ Some demo of QtQuick elements
 ## Universal style
 
 ![Universal](./docs/Universal.png)
+
+## Sources
+
+* [qtquickcontrols2/src/imports/templates]
+* [qtquickcontrols2/src/quickcontrols2]
+* [qtquickcontrols2/src/quicktemplates2]
