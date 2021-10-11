@@ -118,6 +118,8 @@ ApplicationWindow {
 
             Dial {
                 Layout.alignment: Qt.AlignHCenter
+                Layout.preferredHeight: 100
+                Layout.preferredWidth: 100
             }
             TextField {
                 Layout.alignment: Qt.AlignHCenter
@@ -130,7 +132,8 @@ ApplicationWindow {
             }
             Tumbler {
                 Layout.alignment: Qt.AlignHCenter
-                model: 5
+                Layout.preferredHeight: 80
+                model: 3
             }
         }
 
@@ -153,50 +156,43 @@ ApplicationWindow {
             }
         }
 
-        Rectangle {
-            width: 200
-            height: 200
+        Card {
+            title: qsTr("SplitView")
 
-            SplitView {
-                anchors.fill: parent
-                orientation: Qt.Horizontal
+            Rectangle {
+                Layout.preferredHeight: 200
+                Layout.preferredWidth: 200
 
-                Rectangle {
-                    implicitWidth: 60
-                    color: "lightblue"
-                    Label {
-                        text: "View 1"
-                        anchors.centerIn: parent
+                SplitView {
+                    anchors.fill: parent
+                    orientation: Qt.Horizontal
+
+                    Rectangle {
+                        implicitWidth: 60
+                        color: palette.window
+                        Label {
+                            text: "View 1"
+                            anchors.centerIn: parent
+                        }
+                    }
+                    Rectangle {
+                        implicitWidth: 60
+                        SplitView.fillWidth: true
+                        color: palette.window
+                        Label {
+                            text: "View 2"
+                            anchors.centerIn: parent
+                        }
+                    }
+                    Rectangle {
+                        implicitWidth: 60
+                        color: palette.window
+                        Label {
+                            text: "View 3"
+                            anchors.centerIn: parent
+                        }
                     }
                 }
-                Rectangle {
-                    implicitWidth: 60
-                    SplitView.fillWidth: true
-                    color: "lightgray"
-                    Label {
-                        text: "View 2"
-                        anchors.centerIn: parent
-                    }
-                }
-                Rectangle {
-                    implicitWidth: 60
-                    color: "lightgreen"
-                    Label {
-                        text: "View 3"
-                        anchors.centerIn: parent
-                    }
-                }
-            }
-
-            layer.enabled: true
-
-            layer.effect: DropShadow {
-                transparentBorder: true
-                horizontalOffset: 3
-                verticalOffset: 3
-                samples: 25
-                radius: 12
-                color: "#aa000000"
             }
         }
     }

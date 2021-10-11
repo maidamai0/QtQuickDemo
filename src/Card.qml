@@ -32,7 +32,7 @@ Pane {
             id: _titleSeparator
             Layout.alignment: Qt.AlignHCenter
             Layout.preferredWidth: _root.contentWidth
-            color: "black"
+            color: palette.button
             height: 1
         }
     }
